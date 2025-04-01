@@ -4,3 +4,99 @@
         box-sizing: border-box;
 }
 
+nav{
+    background-color: orange;
+    width: auto;
+    height: auto;
+}
+
+.cont-1{
+    background-color: black;
+    color: white;
+}
+
+.logo{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+}
+
+.Front{
+    color: brown;
+    margin-left: 20px;
+}
+
+.cont-2{
+    display: flex;   
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    justify-content: flex-end;
+}
+
+nav .cont-2 ul {
+    display: flex;
+    gap: 20px;
+    text-decoration: none;
+}
+
+nav .cont-2 li {
+    list-style: none;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+nav .cont-2 li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .cont-2 li a:hover{
+    color: brown;
+}
+
+/*Estilo para el main*/
+main{
+    background-image: url(../Imagenes/Plato\ de\ perro.jpg); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    min-height: 80vh;
+}
+
+.container-main{
+    display: flex;
+    flex-direction: column;
+    gap: .3125rem;
+    justify-content: center;
+    margin-left: 150vh;
+    padding-bottom: 10px
+}
+
+.container-main h2{
+    background-color: antiquewhite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: xx-large;
+}
+
+.container-main h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container-main button{
+    background-color: orange;
+    color: black;
+    width:100px;
+}
+
+.container-main button a{
+    color: black;
+    text-decoration: none;
+}
+
+
+
+
