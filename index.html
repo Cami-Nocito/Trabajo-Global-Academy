@@ -1,18 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/estilos.css">
     <title>FrontCat&Dog</title>
 </head>
-
 <body>
     <header>
-        <div class="cont-1"><aside>Grandes ofertas en comederos</aside></div>
+        <div class="cont-1">
+            <aside>Grandes ofertas en comederos</aside>
+            <div class="idioma-moneda">
+                <label for="idioma">Idioma:</label>
+                <select id="idioma" name="idioma">
+                    <option value="es">Español(LATAM)</option>
+                    <option value="en">Inglés</option>
+                    <option value="pt">Portugués</option>
+                </select>
+                
+                <label for="moneda">Moneda:</label>
+                <select id="moneda" name="moneda">
+                    <option value="usd">USD</option>
+                    <option value="pesos">ARG</option>
+                    <option value="eur">EUR</option>
+                </select>
+            </div>
+        </div>
         <nav>
-            <div class="logo"><span class="Front">🐱Front</span><span class="Front-2">Cat&Dog🐶</span></div>
+            <div class="logo"><span class="Front">Front</span><span class="Front-2">Cat&Dog</span></div>
             <div class="cont-2">
                 <ul>
                     <li><a href="#">Categorias</a></li>
@@ -41,7 +56,7 @@
                     <p>$500</p>
                 </div>
             </div>
-
+    
             <div class="tarjeta">
                 <img src="Imagenes/Cerdito de peluche para perro.jpg" alt="Producto 2">
                 <div class="contenido">
@@ -49,7 +64,7 @@
                     <p>$1500</p>
                 </div>
             </div>
-
+    
             <div class="tarjeta">
                 <img src="Imagenes/descargar.jpg" alt="Producto 3">
                 <div class="contenido">
@@ -58,7 +73,6 @@
                 </div>
             </div>
         </div>
-    </section>
     <section id="contacto" class="contacto">
         <h2>Contáctanos</h2>
         <form action="#" method="POST">
@@ -82,16 +96,16 @@
     </div>
     <div class="info">
         <div class="item">
-            <img src="Imagenes/Ubicacion.png.jpg" alt="Localidad">
-            <p><strong>Localidad</strong><br>Posadas - Misiones</p>
+            <img src="localidad.png" alt="Localidad">
+            <p><strong>Localidad</strong><br>Calle - provincia</p>
         </div>
         <div class="item">
-            <img src="Imagenes/telefono.png.jpg" alt="Teléfono">
-            <p><strong>Teléfono</strong><br>123-456789</p>
+            <img src="telefono.png" alt="Teléfono">
+            <p><strong>Teléfono</strong><br>Número de teléfono</p>
         </div>
         <div class="item">
-            <img src="Imagenes/email.png.jpg" alt="Correo Electrónico">
-            <p><strong>Correo Electrónico</strong><br>estoesunaprueba@gmail.com</p>
+            <img src="correo.png" alt="Correo Electrónico">
+            <p><strong>Correo Electrónico</strong><br>Dirección de correo</p>
         </div>
     </div>
     <div class="marca">
@@ -101,5 +115,8 @@
         <p>Todos los derechos reservados</p>
     </div>
 </footer>
-
 </html>
+
+
+
+
