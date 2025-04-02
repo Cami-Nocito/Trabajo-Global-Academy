@@ -3,7 +3,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /* Barra superior */
@@ -190,7 +189,7 @@ main {
     border: none;
     border-radius: 5px;
     background-color: #E5A24A;
-    color: white;
+    color: black;
 }
 
 .contacto input::placeholder {
@@ -295,13 +294,12 @@ footer {
 /* Para pantallas grandes, como tablets y computadoras de escritorio */
 @media (max-width: 1024px) {
 
-    .cont-1,
-    .cont-2 {
+    .cont-1 .cont-2 {
         flex-direction: column;
         align-items: center;
     }
 
-    .info,
+    .info
     .img-productos {
         width: 90%;
     }
