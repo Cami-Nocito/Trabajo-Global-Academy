@@ -18,7 +18,15 @@
     padding-left: 850px;
 }
 
+.cont-1 aside{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: bold;
+}
+
 .idioma-moneda {
+    margin-left: auto;
     display: flex;
     gap: 15px;
     align-items: center;
@@ -47,7 +55,7 @@ nav {
 
 .logo {
     color: white;
-    font-size: 40px;
+    font-size: 50px;
 }
 
 .Front {
@@ -57,6 +65,8 @@ nav {
 }
 
 .cont-2 ul {
+    font-size: 20px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
     display: flex;
     list-style: none;
     gap: 20px;
@@ -289,80 +299,167 @@ footer {
     font-size: 14px;
 }
 
-/* Media Queries */
+/* -- Media Queries -- */
 
-/* Para pantallas grandes, como tablets y computadoras de escritorio */
-@media (max-width: 1024px) {
+/* Dispositivos pequeños (teléfonos, hasta 600px) */
 
-    .cont-1 .cont-2 {
+@media (max-width: 600px) {
+    .cont-1 {
+        flex-direction: column;
+        padding-left: 10px;
+        padding-right: 10px;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .cont-1 aside {
+        position: static;
+        transform: none;
+    }
+
+    .idioma-moneda{
+        margin-right: 55px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo {
+        font-size: 35px;
+    }
+
+    .cont-2 ul {
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+    }
+
+    main {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-main h2 {
+        font-size: 1.5rem;
+    }
+
+    .container-main h3 {
+        font-size: 1.2rem;
+    }
+
+    .img-productos {
         flex-direction: column;
         align-items: center;
     }
 
-    .info
-    .img-productos {
+    .tarjeta {
         width: 90%;
     }
-}
 
-/* Para pantallas medianas, como tablets en modo vertical */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
+    .contacto input {
+        width: 100%;
     }
 
-    .navbar a {
-        display: block;
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
         width: 100%;
         text-align: center;
     }
 
-    .info,
-    .img-productos {
+    .marca p {
+        font-size: 30px;
+    }
+}
+
+/* Dispositivos/Tablets (601px - 1024px) */
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .cont-1 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .cont-1 aside {
+        position: static;
+        transform: none;
+        text-align: center;
         width: 100%;
     }
 
-    footer {
-        display: flex;
+    nav {
         flex-direction: column;
         align-items: center;
-        padding: 15px;
-    }
-}
-
-/* Para pantallas pequeñas, como teléfonos móviles */
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-}
-
-
-
-.info,
-.img-productos {
-    padding: 10px;
-}
-
-.navbar a {
-    padding: 8px 10px;
-}
-
-footer {
-    font-size: 14px;
-}
-
-
-/* Para pantallas muy grandes, como computadoras de escritorio grandes */
-@media (min-width: 1200px) {
-    .contenedor {
-        max-width: 1200px;
-        margin: 0 auto;
+        gap: 10px;
     }
 
-    .navbar {
+    .cont-2 ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .img-productos {
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 45%;
+    }
+
+    .input-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .info {
+        flex-direction: column;
         gap: 20px;
+    }
+
+    .item {
+        width: 90%;
+        text-align: center;
+    }
+}
+
+/* Dispositivo-Escritorio grande (más de 1024px) */
+
+@media (min-width: 1025px) {
+    .cont-1 {
+        padding-left: 850px;
+    }
+
+    .img-productos {
+        justify-content: center;
+    }
+
+    .tarjeta {
+        width: 250px;
+    }
+
+    .input-group {
+        flex-direction: row;
+    }
+
+    .info {
+        flex-direction: row;
+    }
+
+    .item {
+        width: 30%;
+        text-align: unset;
     }
 }
